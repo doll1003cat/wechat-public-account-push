@@ -43,6 +43,33 @@ const USER_CONFIG = {
       ],
     },
   ],
+  USERS: [
+    {
+      // 想要发送的人的名字
+      name: '火火！',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oF7YI6F2DpzcYl8cZaSKW2J1ysow',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'ENfSHaENMFy5xwp3LLEfxeBKB-hdFtsVyzznxdVNQY8',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '05-05',
+      festivals: [
+        
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '火火', year: '2006', date: '05-05',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2022', date: '02-13',//实际上是12号呜呜呜
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-02-13' },//
+      ],
+    },
+  ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
